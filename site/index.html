@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İstanbul'un barajları uzaydan</title>
+<meta name="description" content="Sentinel-2 uydu görüntülerinden İstanbul barajlarının su yüzeyi, 2017'den bugüne, birkaç günde bir ölçülüyor.">
+<meta property="og:title" content="İstanbul'un barajları uzaydan">
+<meta property="og:description" content="Uydudan bakınca barajlarda ne kadar su kaldı? 2017'den bugüne, birkaç günde bir ölçüm.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%230b1d3a'/%3E%3Cpath d='M16 6c4 6 7 9 7 13a7 7 0 0 1-14 0c0-4 3-7 7-13z' fill='%2342a5f5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stil.css?v=450814ee">
+</head>
+<body>
+<header class="uzay">
+  <div class="kap">
+    <p class="ust">Uydu gözüyle · 2017'den bugüne</p>
+    <h1>İstanbul'un barajları <span>uzaydan</span></h1>
+    <p class="giris">Avrupa'nın <b>Sentinel-2</b> uyduları İstanbul'un üstünden birkaç günde bir geçip fotoğraf çekiyor.
+      Bu fotoğraflarda suyu tek tek sayıp her barajın <b>ne kadar yer kapladığını</b> ölçtük.</p>
+    <div class="manset" id="manset" aria-live="polite">
+      <div class="manset-yazi">Yükleniyor…</div>
+      <div class="cubuk" aria-hidden="true"><div class="cubuk-dolu" id="manset-cubuk"></div></div>
+    </div>
+  </div>
+</header>
+
+<main class="kap">
+  <section>
+    <h2>Barajlar tek tek</h2>
+    <p class="ipucu"><span class="kare mavi"></span> mavi: bugün su olan yer
+      <span class="kare kum"></span> kum rengi: son bir yılda su olup şimdi kuruyan yer. Bir baraja dokunun.</p>
+    <div class="kartlar" id="kartlar"></div>
+  </section>
+
+  <section class="detay" id="detay" hidden>
+    <h2 id="d-ad"></h2>
+    <p class="d-cumle" id="d-cumle"></p>
+
+    <div class="karsilastir" id="karsilastir">
+      <img id="d-simdi" alt="" class="kat alt">
+      <div class="ust-kat" id="d-ust-kat"><img id="d-once" alt="" class="kat"></div>
+      <div class="ayrac" id="d-ayrac" aria-hidden="true"><span>⟺</span></div>
+      <span class="etiket sol" id="d-once-et"></span>
+      <span class="etiket sag" id="d-simdi-et"></span>
+      <input type="range" min="0" max="100" value="50" id="d-kaydir" aria-label="Önce ve şimdi görüntüleri arasında kaydır">
+    </div>
+    <p class="kucuk">Sürgüyü kaydırın: solda önceki, sağda son temiz uydu görüntüsü (gerçek renk, 10 m çözünürlük).</p>
+
+    <div class="grafik-bas">
+      <h3>Su yüzeyi alanı (km²)</h3>
+      <div class="dugmeler" role="group" aria-label="Zaman aralığı">
+        <button data-aralik="1" class="secili">Son 1 yıl</button>
+        <button data-aralik="3">Son 3 yıl</button>
+        <button data-aralik="99">Tümü</button>
+      </div>
+    </div>
+    <div class="grafik" id="grafik"></div>
+    <p class="kucuk" id="d-grafik-not"></p>
+
+    <div id="d-iski" hidden>
+      <h3>Karşılaştırma: İSKİ'nin açıkladığı doluluk oranı (%)</h3>
+      <div class="grafik kisa" id="grafik-iski"></div>
+      <p class="kucuk" id="d-iski-not"></p>
+    </div>
+
+    <details class="tablo-ac">
+      <summary>Ölçümleri tablo olarak gör</summary>
+      <div class="tablo-kap"><table id="d-tablo"><thead><tr><th>Tarih</th><th>Alan (km²)</th></tr></thead><tbody></tbody></table></div>
+    </details>
+  </section>
+
+  <section class="uyari">
+    <h2>Dikkat: alan, hacim değildir</h2>
+    <p>Bu site barajların <b>yüzeyini</b> ölçer, içindeki <b>su miktarını</b> değil. Bir baraj kenarlarda sığdır:
+      su azalınca önce geniş kıyılar açığa çıkar, ortası hâlâ derindir. Bu yüzden "yüzey %80" demek "su %80" demek değildir.
+      Su miktarı için İSKİ'nin açıkladığı doluluk oranlarına bakın.</p>
+  </section>
+
+  <section class="nasil">
+    <h2>Nasıl ölçtük?</h2>
+    <ol class="adimlar">
+      <li><b>Fotoğraf.</b> Sentinel-2 uyduları 786 km yükseklikten her yeri 2-5 günde bir çekiyor. Fotoğraflar herkese açık ve ücretsiz.</li>
+      <li><b>Suyu bulmak.</b> Su, yeşil ışığı yansıtır ama kızılötesi ışığı yutar. Bu farka bakarak (NDWI) her 10 m × 10 m'lik kareye "su mu, değil mi?" diye sorduk.</li>
+      <li><b>Bulutları ayıklamak.</b> Bulut veya bulut gölgesi barajın %3'ünden fazlasını örtüyorsa o günü attık.</li>
+      <li><b>Saymak.</b> Barajın haritadaki (OpenStreetMap) sınırları içindeki su karelerini sayıp 100 m² ile çarptık.</li>
+    </ol>
+    <h3>Sınırlar</h3>
+    <ul class="sinirlar" id="sinirlar">
+      <li><b>Çözünürlük 10 m.</b> Kıyıdaki karelerin yarısı su yarısı kara olabilir; küçük barajlarda (Elmalı, Istrancalar) hata oranı daha büyüktür.</li>
+      <li><b>Bulutlar.</b> Kışın haftalarca temiz görüntü çıkmayabilir; grafikteki boşluklar bundandır. Bulut maskesi bazen ince bulutu veya pusu kaçırır; yakın tarihli ölçümlerden %15'ten fazla sapan ölçümleri "şüpheli" sayıp çıkardık.</li>
+      <li><b>Sınır çizgisi.</b> Ölçüm, barajın OpenStreetMap'teki çizgisinin 30 m dışına kadar yapılır. Baraj bu çizgiden de taşarsa fazlası sayılmaz.</li>
+      <li><b>Bulanık / yosunlu su.</b> Çok bulanık ya da yüzeyi yosunla kaplı su kara gibi görünebilir.</li>
+      <li><b>"En dolu"</b> = 2017'den beri ölçülen alanların 98. yüzdeliği. Barajın resmî azami alanı değildir.</li>
+      <li><b>Yeşilçay</b> bir baraj gölü değil, dere suyu alan bir regülatör sistemi; uydudan ölçülecek göl yüzeyi olmadığı için yok. Istrancalar'da Büyükdere bendi haritada göl olarak çizili olmadığı için dahil değil.</li>
+    </ul>
+    <details>
+      <summary>Teknik ayrıntı</summary>
+      <p id="teknik">Veri: Copernicus Sentinel-2 L2A (ESA), AWS üzerindeki açık veri kopyası; arama Element84 Earth Search STAC
+        (<code>sentinel-2-l2a</code>). Su: NDWI = (B03 − B08)/(B03 + B08) &gt; 0. Bulut maskesi: Sen2Cor sahne sınıfları (SCL) 0, 1, 3, 8, 9, 10, 11.
+        Bulutsuz kısım %97'den azsa ölçüm atılır; daha az bulutlu kısım, görünen kısmın su oranıyla doldurulur.
+        Baraj sınırları: OpenStreetMap (ODbL), 30 m tampon. Aynı gün iki görüntü varsa bulutu az olan alınır.
+        Şüpheli ölçüm: ±45 gün içinde zamanca en yakın 6 ölçümün medyanından %15'ten (Elmalı, Istrancalar, Kazandere, Pabuçdere için %25) fazla sapma.
+        Karşılaştırma: İBB Açık Veri Portalı "İstanbul Barajları Günlük Doluluk Oranları" (2017 – Şubat 2024; sonrası yayımlanmadı).
+        Kod ve veriler: <a href="https://github.com/birtohum/barajlar-uzaydan">github.com/birtohum/barajlar-uzaydan</a>.</p>
+    </details>
+  </section>
+</main>
+
+<footer>
+  <div class="kap">
+    <p id="guncelleme"></p>
+    <p>Uydu verisi: Copernicus Sentinel-2 (ESA) · Harita: © OpenStreetMap katkıcıları · Doluluk: İBB Açık Veri (İSKİ).
+      Kod Apache-2.0. <a href="https://github.com/birtohum/barajlar-uzaydan">Kaynak kod</a> · <a href="https://birtohum.github.io/">Diğer projeler</a></p>
+  </div>
+</footer>
+<script src="uygulama.js?v=4194bd53"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+{
+ "guncelleme": "2026-11-04T16:13Z",
+ "toplam": {
+  "son_km2": 80.06,
+  "dolu_km2": 94.3,
+  "yuzde": 84.9
+ },
+ "barajlar": [
+  {
+   "kod": "omerli",
+   "ad": "Ömerli",
+   "yaka": "Anadolu",
+   "not": null,
+   "dolu_km2": 19.421,
+   "son": {
+    "tarih": "2026-10-22",
+    "km2": 18.051,
+    "yuzde": 92.9
+   },
+   "gecen_yil": {
+    "km2": 11.682,
+    "yuzde": 60.2
+   },
+   "once": {
+    "tarih": "2026-04-06",
+    "km2": 19.146
+   },
+   "olcum_sayisi": 313,
+   "supheli_sayisi": 11,
+   "ilk_tarih": "2017-02-02",
+   "iski": {
+    "n": 192,
+    "spearman": 0.909
+   }
+  },
+  {
+   "kod": "darlik",
+   "ad": "Darlık",
+   "yaka": "Anadolu",
+   "not": null,
+   "dolu_km2": 5.166,
+   "son": {
+    "tarih": "2026-10-22",
+    "km2": 4.792,
+    "yuzde": 92.8
+   },
+   "gecen_yil": null,
+   "once": {
+    "tarih": "2026-04-25",
+    "km2": 4.893
+   },
+   "olcum_sayisi": 146,
+   "supheli_sayisi": 12,
+   "ilk_tarih": "2017-03-01",
+   "iski": {
+    "n": 93,
+    "spearman": 0.914
+   }
+  },
+  {
+   "kod": "elmali",
+   "ad": "Elmalı",
+   "yaka": "Anadolu",
+   "not": "Elmalı-1 ve Elmalı-2 gölleri birlikte.",
+   "dolu_km2": 0.776,
+   "son": {
+    "tarih": "2026-10-22",
+    "km2": 0.686,
+    "yuzde": 88.5
+   },
+   "gecen_yil": {
+    "km2": 0.485,
+    "yuzde": 62.5
+   },
+   "once": {
+    "tarih": "2026-04-01",
+    "km2": 0.823
+   },
+   "olcum_sayisi": 323,
+   "supheli_sayisi": 35,
+   "ilk_tarih": "2017-03-01",
+   "iski": {
+    "n": 197,
+    "spearman": 0.854
+   }
+  },
+  {
+   "kod": "terkos",
+   "ad": "Terkos",
+   "yaka": "Avrupa",
+   "not": "Durusu (Terkos) Gölü.",
+   "dolu_km2": 33.342,
+   "son": {
+    "tarih": "2026-09-05",
+    "km2": 27.517,
+    "yuzde": 82.5
+   },
+   "gecen_yil": {
+    "km2": 29.171,
+    "yuzde": 87.5
+   },
+   "once": {
+    "tarih": "2026-04-08",
+    "km2": 31.77
+   },
+   "olcum_sayisi": 174,
+   "supheli_sayisi": 3,
+   "ilk_tarih": "2017-01-03",
+   "iski": {
+    "n": 108,
+    "spearman": 0.717
+   }
+  },
+  {
+   "kod": "alibey",
+   "ad": "Alibey",
+   "yaka": "Avrupa",
+   "not": null,
+   "dolu_km2": 2.982,
+   "son": {
+    "tarih": "2026-10-22",
+    "km2": 2.922,
+    "yuzde": 98.0
+   },
+   "gecen_yil": {
+    "km2": 1.389,
+    "yuzde": 46.6
+   },
+   "once": {
+    "tarih": "2025-12-06",
+    "km2": 1.297
+   },
+   "olcum_sayisi": 269,
+   "supheli_sayisi": 19,
+   "ilk_tarih": "2017-07-24",
+   "iski": {
+    "n": 160,
+    "spearman": 0.983
+   }
+  },
+  {
+   "kod": "buyukcekmece",
+   "ad": "Büyükçekmece",
+   "yaka": "Avrupa",
+   "not": null,
+   "dolu_km2": 20.816,
+   "son": {
+    "tarih": "2026-10-12",
+    "km2": 19.946,
+    "yuzde": 95.8
+   },
+   "gecen_yil": {
+    "km2": 20.412,
+    "yuzde": 98.1
+   },
+   "once": {
+    "tarih": "2026-04-26",
+    "km2": 20.695
+   },
+   "olcum_sayisi": 384,
+   "supheli_sayisi": 9,
+   "ilk_tarih": "2017-01-03",
+   "iski": {
+    "n": 236,
+    "spearman": 0.907
+   }
+  },
+  {
+   "kod": "sazlidere",
+   "ad": "Sazlıdere",
+   "yaka": "Avrupa",
+   "not": null,
+   "dolu_km2": 6.021,
+   "son": {
+    "tarih": "2026-10-10",
+    "km2": 4.154,
+    "yuzde": 69.0
+   },
+   "gecen_yil": {
+    "km2": 4.39,
+    "yuzde": 72.9
+   },
+   "once": {
+    "tarih": "2026-04-05",
+    "km2": 5.255
+   },
+   "olcum_sayisi": 345,
+   "supheli_sayisi": 6,
+   "ilk_tarih": "2017-02-02",
+   "iski": {
+    "n": 209,
+    "spearman": 0.988
+   }
+  },
+  {
+   "kod": "istrancalar",
+   "ad": "Istrancalar",
+   "yaka": "Avrupa",
+   "not": "Düzdere, Kuzuludere, Elmalıdere ve Sultanbahçedere gölleri birlikte. Büyükdere bendi OSM'de göl olarak çizili olmadığı için dahil değil.",
+   "dolu_km2": 0.739,
+   "son": {
+    "tarih": "2026-09-05",
+    "km2": 0.185,
+    "yuzde": 25.0
+   },
+   "gecen_yil": {
+    "km2": 0.16,
+    "yuzde": 21.7
+   },
+   "once": {
+    "tarih": "2026-03-02",
+    "km2": 0.387
+   },
+   "olcum_sayisi": 112,
+   "supheli_sayisi": 46,
+   "ilk_tarih": "2017-02-22",
+   "iski": {
+    "n": 71,
+    "spearman": 0.938
+   }
+  },
+  {
+   "kod": "kazandere",
+   "ad": "Kazandere",
+   "yaka": "Avrupa",
+   "not": null,
+   "dolu_km2": 1.894,
+   "son": {
+    "tarih": "2026-09-05",
+    "km2": 0.877,
+    "yuzde": 46.3
+   },
+   "gecen_yil": {
+    "km2": 0.953,
+    "yuzde": 50.3
+   },
+   "once": {
+    "tarih": "2026-04-06",
+    "km2": 1.539
+   },
+   "olcum_sayisi": 155,
+   "supheli_sayisi": 28,
+   "ilk_tarih": "2017-02-22",
+   "iski": {
+    "n": 94,
+    "spearman": 0.925
+   }
+  },
+  {
+   "kod": "pabucdere",
+   "ad": "Pabuçdere",
+   "yaka": "Avrupa",
+   "not": null,
+   "dolu_km2": 3.147,
+   "son": {
+    "tarih": "2026-09-05",
+    "km2": 0.931,
+    "yuzde": 29.6
+   },
+   "gecen_yil": {
+    "km2": 1.791,
+    "yuzde": 56.9
+   },
+   "once": {
+    "tarih": "2026-04-26",
+    "km2": 2.353
+   },
+   "olcum_sayisi": 168,
+   "supheli_sayisi": 16,
+   "ilk_tarih": "2017-02-22",
+   "iski": {
+    "n": 107,
+    "spearman": 0.961
+   }
+  }
+ ]
+}
