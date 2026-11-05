@@ -25,9 +25,9 @@
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
-body { margin: 0; background: var(--zemin); color: var(--murekkep); font: 18px/1.55 Nunito, system-ui, sans-serif; }
+body { margin: 0; background: var(--zemin); color: var(--murekkep); font: 17px/1.55 Inter, system-ui, sans-serif; }
 .kap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
-h1, h2, h3 { font-family: "Baloo 2", Nunito, sans-serif; line-height: 1.15; }
+h1, h2, h3 { font-family: "Inter Tight", system-ui, sans-serif; line-height: 1.15; }
 h2 { font-size: 1.9rem; margin: 2.2rem 0 .4rem; }
 h3 { font-size: 1.25rem; margin: 1.6rem 0 .4rem; }
 a { color: var(--su); }
@@ -53,7 +53,7 @@ code { font-size: .9em; }
 .giris { font-size: 1.15rem; max-width: 46em; color: #dce6f5; margin: 0 0 1.6rem; }
 .manset { background: #ffffff12; border: 1px solid #ffffff26; border-radius: 18px; padding: 18px 20px; max-width: 760px; }
 .manset-yazi { font-size: 1.25rem; font-weight: 700; }
-.manset-yazi .buyuk { font-family: "Baloo 2", sans-serif; font-size: 3.2rem; line-height: 1; color: #90caf9; display: block; margin-bottom: .2rem; }
+.manset-yazi .buyuk { font-family: "Inter Tight", system-ui, sans-serif; font-size: 3.2rem; line-height: 1; color: #90caf9; display: block; margin-bottom: .2rem; }
 .cubuk { margin-top: 14px; height: 18px; background: #e7b87455; border-radius: 9px; overflow: hidden; }
 .cubuk-dolu { height: 100%; width: 0; background: linear-gradient(90deg, #1976d2, #64b5f6); border-radius: 9px; transition: width 1.2s ease; }
 
@@ -73,10 +73,10 @@ code { font-size: .9em; }
 .kart.secili { border-color: var(--su); box-shadow: 0 0 0 3px color-mix(in srgb, var(--su) 25%, transparent); }
 .kart .siluet { height: 150px; display: flex; align-items: center; justify-content: center; }
 .kart .siluet img { max-width: 100%; max-height: 150px; }
-.kart .ad { font-family: "Baloo 2", sans-serif; font-size: 1.35rem; font-weight: 800; line-height: 1.1; }
+.kart .ad { font-family: "Inter Tight", system-ui, sans-serif; font-size: 1.35rem; font-weight: 800; line-height: 1.1; }
 .kart .yaka { color: var(--soluk); font-size: .85rem; font-weight: 700; }
-.kart .yuzde { font-family: "Baloo 2", sans-serif; font-size: 2.2rem; font-weight: 800; line-height: 1; color: var(--su); }
-.kart .yuzde small { font-size: .95rem; color: var(--ikincil); font-family: Nunito, sans-serif; font-weight: 700; }
+.kart .yuzde { font-family: "Inter Tight", system-ui, sans-serif; font-size: 2.2rem; font-weight: 800; line-height: 1; color: var(--su); }
+.kart .yuzde small { font-size: .95rem; color: var(--ikincil); font-family: Inter, system-ui, sans-serif; font-weight: 700; }
 .kart .degisim { font-size: .92rem; color: var(--ikincil); }
 .ok-asagi { color: var(--kum-koyu); font-weight: 800; }
 .ok-yukari { color: var(--su); font-weight: 800; }
@@ -102,7 +102,7 @@ code { font-size: .9em; }
 .grafik { position: relative; width: 100%; height: 300px; }
 .grafik.kisa { height: 180px; }
 .grafik svg { display: block; width: 100%; height: 100%; overflow: hidden; }
-.grafik .eksen text { fill: var(--soluk); font-size: 12px; font-family: Nunito, sans-serif; }
+.grafik .eksen text { fill: var(--soluk); font-size: 12px; font-family: Inter, system-ui, sans-serif; }
 .grafik .izgara line { stroke: var(--izgara); }
 .grafik .cizgi { fill: none; stroke: var(--su); stroke-width: 2; stroke-linejoin: round; }
 .grafik .cizgi.iski { stroke: var(--kum-koyu); }
