@@ -1,9 +1,9 @@
 {
- "guncelleme": "2026-11-07T05:17Z",
+ "guncelleme": "2026-11-08T05:20Z",
  "toplam": {
-  "son_km2": 80.06,
+  "son_km2": 80.68,
   "dolu_km2": 94.3,
-  "yuzde": 84.9
+  "yuzde": 85.5
  },
  "barajlar": [
   {
@@ -145,19 +145,19 @@
    "not": null,
    "dolu_km2": 20.816,
    "son": {
-    "tarih": "2026-10-12",
-    "km2": 19.946,
-    "yuzde": 95.8
+    "tarih": "2026-11-07",
+    "km2": 20.562,
+    "yuzde": 98.8
    },
    "gecen_yil": {
-    "km2": 20.412,
-    "yuzde": 98.1
+    "km2": 20.234,
+    "yuzde": 97.2
    },
    "once": {
     "tarih": "2026-04-26",
     "km2": 20.695
    },
-   "olcum_sayisi": 384,
+   "olcum_sayisi": 385,
    "supheli_sayisi": 9,
    "ilk_tarih": "2017-01-03",
    "iski": {
