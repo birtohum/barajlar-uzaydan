@@ -1,9 +1,9 @@
 {
- "guncelleme": "2026-11-14T05:21Z",
+ "guncelleme": "2026-11-15T05:24Z",
  "toplam": {
-  "son_km2": 80.68,
+  "son_km2": 84.49,
   "dolu_km2": 94.3,
-  "yuzde": 85.5
+  "yuzde": 89.6
  },
  "barajlar": [
   {
@@ -89,21 +89,21 @@
    "ad": "Terkos",
    "yaka": "Avrupa",
    "not": "Durusu (Terkos) Gölü.",
-   "dolu_km2": 33.342,
+   "dolu_km2": 33.341,
    "son": {
-    "tarih": "2026-09-05",
-    "km2": 27.517,
-    "yuzde": 82.5
+    "tarih": "2026-11-14",
+    "km2": 31.27,
+    "yuzde": 93.8
    },
    "gecen_yil": {
-    "km2": 29.171,
-    "yuzde": 87.5
+    "km2": 25.459,
+    "yuzde": 76.4
    },
    "once": {
     "tarih": "2026-04-08",
     "km2": 31.77
    },
-   "olcum_sayisi": 174,
+   "olcum_sayisi": 175,
    "supheli_sayisi": 3,
    "ilk_tarih": "2017-01-03",
    "iski": {
@@ -145,19 +145,19 @@
    "not": null,
    "dolu_km2": 20.816,
    "son": {
-    "tarih": "2026-11-07",
-    "km2": 20.562,
-    "yuzde": 98.8
+    "tarih": "2026-11-14",
+    "km2": 20.621,
+    "yuzde": 99.1
    },
    "gecen_yil": {
-    "km2": 20.234,
-    "yuzde": 97.2
+    "km2": 20.136,
+    "yuzde": 96.7
    },
    "once": {
     "tarih": "2026-04-26",
     "km2": 20.695
    },
-   "olcum_sayisi": 385,
+   "olcum_sayisi": 386,
    "supheli_sayisi": 9,
    "ilk_tarih": "2017-01-03",
    "iski": {
