@@ -1,9 +1,9 @@
 {
- "guncelleme": "2026-11-21T05:26Z",
+ "guncelleme": "2026-11-22T12:48Z",
  "toplam": {
-  "son_km2": 84.49,
+  "son_km2": 85.52,
   "dolu_km2": 94.3,
-  "yuzde": 89.6
+  "yuzde": 90.7
  },
  "barajlar": [
   {
@@ -13,19 +13,16 @@
    "not": null,
    "dolu_km2": 19.421,
    "son": {
-    "tarih": "2026-10-22",
-    "km2": 18.051,
-    "yuzde": 92.9
+    "tarih": "2026-11-21",
+    "km2": 18.011,
+    "yuzde": 92.7
    },
-   "gecen_yil": {
-    "km2": 11.682,
-    "yuzde": 60.2
-   },
+   "gecen_yil": null,
    "once": {
     "tarih": "2026-04-06",
     "km2": 19.146
    },
-   "olcum_sayisi": 313,
+   "olcum_sayisi": 314,
    "supheli_sayisi": 11,
    "ilk_tarih": "2017-02-02",
    "iski": {
@@ -38,18 +35,21 @@
    "ad": "Darlık",
    "yaka": "Anadolu",
    "not": null,
-   "dolu_km2": 5.166,
+   "dolu_km2": 5.165,
    "son": {
-    "tarih": "2026-10-22",
-    "km2": 4.792,
-    "yuzde": 92.8
+    "tarih": "2026-11-21",
+    "km2": 4.831,
+    "yuzde": 93.5
    },
-   "gecen_yil": null,
+   "gecen_yil": {
+    "km2": 3.064,
+    "yuzde": 59.3
+   },
    "once": {
     "tarih": "2026-04-25",
     "km2": 4.893
    },
-   "olcum_sayisi": 146,
+   "olcum_sayisi": 147,
    "supheli_sayisi": 12,
    "ilk_tarih": "2017-03-01",
    "iski": {
@@ -145,19 +145,19 @@
    "not": null,
    "dolu_km2": 20.816,
    "son": {
-    "tarih": "2026-11-14",
-    "km2": 20.621,
-    "yuzde": 99.1
+    "tarih": "2026-11-21",
+    "km2": 20.608,
+    "yuzde": 99.0
    },
    "gecen_yil": {
-    "km2": 20.136,
-    "yuzde": 96.7
+    "km2": 19.959,
+    "yuzde": 95.9
    },
    "once": {
     "tarih": "2026-04-26",
     "km2": 20.695
    },
-   "olcum_sayisi": 386,
+   "olcum_sayisi": 387,
    "supheli_sayisi": 9,
    "ilk_tarih": "2017-01-03",
    "iski": {
@@ -172,19 +172,19 @@
    "not": null,
    "dolu_km2": 6.021,
    "son": {
-    "tarih": "2026-10-10",
-    "km2": 4.154,
-    "yuzde": 69.0
+    "tarih": "2026-11-21",
+    "km2": 5.201,
+    "yuzde": 86.4
    },
    "gecen_yil": {
-    "km2": 4.39,
-    "yuzde": 72.9
+    "km2": 4.03,
+    "yuzde": 66.9
    },
    "once": {
     "tarih": "2026-04-05",
     "km2": 5.255
    },
-   "olcum_sayisi": 345,
+   "olcum_sayisi": 346,
    "supheli_sayisi": 6,
    "ilk_tarih": "2017-02-02",
    "iski": {
