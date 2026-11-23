@@ -1,9 +1,9 @@
 {
- "guncelleme": "2026-11-22T12:48Z",
+ "guncelleme": "2026-11-23T15:11Z",
  "toplam": {
-  "son_km2": 85.52,
+  "son_km2": 85.48,
   "dolu_km2": 94.3,
-  "yuzde": 90.7
+  "yuzde": 90.6
  },
  "barajlar": [
   {
@@ -89,21 +89,21 @@
    "ad": "Terkos",
    "yaka": "Avrupa",
    "not": "Durusu (Terkos) Gölü.",
-   "dolu_km2": 33.341,
+   "dolu_km2": 33.34,
    "son": {
-    "tarih": "2026-11-14",
-    "km2": 31.27,
-    "yuzde": 93.8
+    "tarih": "2026-11-22",
+    "km2": 31.231,
+    "yuzde": 93.7
    },
    "gecen_yil": {
-    "km2": 25.459,
-    "yuzde": 76.4
+    "km2": 24.82,
+    "yuzde": 74.4
    },
    "once": {
     "tarih": "2026-04-08",
     "km2": 31.77
    },
-   "olcum_sayisi": 175,
+   "olcum_sayisi": 176,
    "supheli_sayisi": 3,
    "ilk_tarih": "2017-01-03",
    "iski": {
@@ -145,8 +145,8 @@
    "not": null,
    "dolu_km2": 20.816,
    "son": {
-    "tarih": "2026-11-21",
-    "km2": 20.608,
+    "tarih": "2026-11-22",
+    "km2": 20.606,
     "yuzde": 99.0
    },
    "gecen_yil": {
@@ -157,7 +157,7 @@
     "tarih": "2026-04-26",
     "km2": 20.695
    },
-   "olcum_sayisi": 387,
+   "olcum_sayisi": 388,
    "supheli_sayisi": 9,
    "ilk_tarih": "2017-01-03",
    "iski": {
@@ -170,10 +170,10 @@
    "ad": "Sazlıdere",
    "yaka": "Avrupa",
    "not": null,
-   "dolu_km2": 6.021,
+   "dolu_km2": 6.02,
    "son": {
-    "tarih": "2026-11-21",
-    "km2": 5.201,
+    "tarih": "2026-11-22",
+    "km2": 5.202,
     "yuzde": 86.4
    },
    "gecen_yil": {
@@ -184,7 +184,7 @@
     "tarih": "2026-04-05",
     "km2": 5.255
    },
-   "olcum_sayisi": 346,
+   "olcum_sayisi": 347,
    "supheli_sayisi": 6,
    "ilk_tarih": "2017-02-02",
    "iski": {
