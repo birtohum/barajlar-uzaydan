@@ -1,9 +1,9 @@
 {
- "guncelleme": "2026-11-23T15:11Z",
+ "guncelleme": "2026-11-24T15:10Z",
  "toplam": {
-  "son_km2": 85.48,
+  "son_km2": 85.61,
   "dolu_km2": 94.3,
-  "yuzde": 90.6
+  "yuzde": 90.8
  },
  "barajlar": [
   {
@@ -251,21 +251,18 @@
    "ad": "Pabuçdere",
    "yaka": "Avrupa",
    "not": null,
-   "dolu_km2": 3.147,
+   "dolu_km2": 3.146,
    "son": {
-    "tarih": "2026-09-05",
-    "km2": 0.931,
-    "yuzde": 29.6
+    "tarih": "2026-11-24",
+    "km2": 1.057,
+    "yuzde": 33.6
    },
-   "gecen_yil": {
-    "km2": 1.791,
-    "yuzde": 56.9
-   },
+   "gecen_yil": null,
    "once": {
     "tarih": "2026-04-26",
     "km2": 2.353
    },
-   "olcum_sayisi": 168,
+   "olcum_sayisi": 169,
    "supheli_sayisi": 16,
    "ilk_tarih": "2017-02-22",
    "iski": {
